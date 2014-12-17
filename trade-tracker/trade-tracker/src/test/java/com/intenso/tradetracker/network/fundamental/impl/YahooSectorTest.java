@@ -1,4 +1,4 @@
-package com.intenso.tradetracker.network;
+package com.intenso.tradetracker.network.fundamental.impl;
 
 import static org.junit.Assert.assertTrue;
 
@@ -8,17 +8,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.intenso.tradetracker.model.Stock;
+import com.intenso.tradetracker.network.fundamental.impl.YahooSector;
 
-public class YahooSectorImplTest {
+public class YahooSectorTest {
 
 	private static Logger logger = LogManager.getLogger();
 
 	private static Stock stock;
-	private static YahooSectorImpl yahooSector;
+	private static YahooSector yahooSector;
 
 	@BeforeClass
 	public static void setUp() {
-		yahooSector = new YahooSectorImpl();
+		yahooSector = new YahooSector();
 		stock = new Stock("msft");
 	}
 

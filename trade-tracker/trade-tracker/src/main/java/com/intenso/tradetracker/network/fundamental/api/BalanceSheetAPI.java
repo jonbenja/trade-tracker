@@ -1,4 +1,4 @@
-package com.intenso.tradetracker.network;
+package com.intenso.tradetracker.network.fundamental.api;
 
 import org.joda.time.DateTime;
 

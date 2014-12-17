@@ -1,4 +1,4 @@
-package com.intenso.tradetracker.network;
+package com.intenso.tradetracker.network.fundamental.api;
 
 import org.joda.time.DateTime;
 
@@ -11,7 +11,7 @@ import com.intenso.tradetracker.model.Stock;
 public interface FundamentalsAPI {
 
 	
-	public int getMarketCap(Stock stock);
+	public float getMarketCap(Stock stock);
 	
 	public float getTrailingPE(Stock stock);
 	
