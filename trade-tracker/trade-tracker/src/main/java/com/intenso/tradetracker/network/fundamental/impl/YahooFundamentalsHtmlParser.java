@@ -14,7 +14,7 @@ import com.intenso.tradetracker.network.BaseHtmlParserAPI;
 import com.intenso.tradetracker.network.fundamental.api.FundamentalsAPI;
 import com.intenso.tradetracker.utils.properties.YahooProps;
 
-public class YahooFundamentals extends BaseHtmlParserAPI implements FundamentalsAPI {
+public class YahooFundamentalsHtmlParser extends BaseHtmlParserAPI implements FundamentalsAPI {
 
 	
 	private static Logger logger = LogManager.getLogger();
@@ -23,7 +23,7 @@ public class YahooFundamentals extends BaseHtmlParserAPI implements Fundamentals
 	private String mcapBreak,tpeBreak,fpeBreak,pegBreak,psBreak,pbBreak,fpDateBreak;
 
 	
-	public YahooFundamentals() {
+	public YahooFundamentalsHtmlParser() {
 		url = YahooProps.get().get("keystats");
 		mcapBreak = YahooProps.get().get("mcapBreak");
 		tpeBreak = YahooProps.get().get("tpeBreak");

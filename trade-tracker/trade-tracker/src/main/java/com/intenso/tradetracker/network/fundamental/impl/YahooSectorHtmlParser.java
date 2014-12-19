@@ -10,7 +10,7 @@ import com.intenso.tradetracker.utils.properties.YahooProps;
 
 
 
-public class YahooSector extends BaseHtmlParserAPI implements SectorAPI {
+public class YahooSectorHtmlParser extends BaseHtmlParserAPI implements SectorAPI {
 
 	private static final Logger logger = LogManager.getLogger();
 	
@@ -19,7 +19,7 @@ public class YahooSector extends BaseHtmlParserAPI implements SectorAPI {
 	private String industryBreak;
 	
 	
-	public YahooSector() {
+	public YahooSectorHtmlParser() {
 		sectorBreak = YahooProps.get().get("sectorBreak");
 		industryBreak = YahooProps.get().get("industryBreak");
 		url = YahooProps.get().get("industry");

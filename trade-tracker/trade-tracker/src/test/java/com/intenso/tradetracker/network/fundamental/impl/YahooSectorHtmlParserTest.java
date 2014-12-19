@@ -8,18 +8,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.intenso.tradetracker.model.Stock;
-import com.intenso.tradetracker.network.fundamental.impl.YahooSector;
+import com.intenso.tradetracker.network.fundamental.impl.YahooSectorHtmlParser;
 
-public class YahooSectorTest {
+public class YahooSectorHtmlParserTest {
 
 	private static Logger logger = LogManager.getLogger();
 
 	private static Stock stock;
-	private static YahooSector yahooSector;
+	private static YahooSectorHtmlParser yahooSector;
 
 	@BeforeClass
 	public static void setUp() {
-		yahooSector = new YahooSector();
+		yahooSector = new YahooSectorHtmlParser();
 		stock = new Stock("msft");
 	}
 
